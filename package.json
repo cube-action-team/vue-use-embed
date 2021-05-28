@@ -1,0 +1,88 @@
+{
+  "name": "vue-use-embed",
+  "description": "Vue use embed that have been brought together for you to use in all your components.",
+  "version": "0.1.0",
+  "module": "dist/vue-use-embed.esm.js",
+  "unpkg": "dist/vue-use-embed.js",
+  "main": "dist/vue-use-embed.js",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "vue-use-embed",
+    "embed"
+  ],
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development && vuepress dev docs",
+    "build:docs": "cross-env NODE_ENV=production && vuepress build docs",
+    "prod": "cross-env NODE_ENV=production && vuepress dev docs",
+    "pre:build": "cross-env NODE_ENV=production && node ./scripts/build",
+    "serve": "vuepress serve docs",
+    "lint:eslint": "eslint --ext .js,.vue --ignore-path .gitignore --ignore-path .eslintignore .",
+    "lint:eslint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore --ignore-path .eslintignore .",
+    "prettier": "prettier --config ./.prettierrc.js --ignore-path ./.prettierignore --write \"**/*.{js,json,css,scss,vue,html,md}\"",
+    "test": "vue-cli-service test:unit",
+    "test:cover": "jest --coverage",
+    "test:watch": "jest --coverage --watch",
+    "test:prod": "npm run lint:eslint && npm run test -- --no-cache",
+    "publish": "npm run build"
+  },
+  "files": [
+    "dist/*.js"
+  ],
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/composition-api": "^1.0.0-rc.6",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/test-utils": "^1.0.3",
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-pwa": "^1.8.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "bundlesize": "^0.18.0",
+    "chalk": "^4.0.0",
+    "core-js": "^3.6.5",
+    "cross-env": "^7.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "filesize": "^6.0.1",
+    "flush-promises": "^1.0.2",
+    "gzip-size": "^5.1.1",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "mkdirp": "^1.0.3",
+    "node-sass": "^4.12.0",
+    "prettier": "^2.2.1",
+    "rollup": "^2.0.6",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "sass-loader": "^8.0.2",
+    "uglify-js": "^3.7.3",
+    "vue": "^2.6.11",
+    "vue-router": "^3.5.1",
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-plugin-element-tabs": "^0.2.8"
+  },
+  "bundlesize": [
+    {
+      "path": "./dist/*.min.js",
+      "maxSize": "10 kB"
+    }
+  ],
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.6"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "yarn lint:eslint",
+      "yarn prettier",
+      "jest --maxWorkers=1 --bail --findRelatedTests"
+    ]
+  }
+}
