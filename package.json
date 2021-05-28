@@ -15,7 +15,7 @@
     "dev": "cross-env NODE_ENV=development && vuepress dev docs",
     "build:docs": "cross-env NODE_ENV=production && vuepress build docs",
     "prod": "cross-env NODE_ENV=production && vuepress dev docs",
-    "pre:build": "cross-env NODE_ENV=production && node ./scripts/build",
+    "build": "cross-env NODE_ENV=production && node ./scripts/build",
     "serve": "vuepress serve docs",
     "lint:eslint": "eslint --ext .js,.vue --ignore-path .gitignore --ignore-path .eslintignore .",
     "lint:eslint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore --ignore-path .eslintignore .",
