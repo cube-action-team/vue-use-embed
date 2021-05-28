@@ -1,4 +1,4 @@
-<p align="center"><a href="/"><img src="https://vue-use-embed.netlify.app/assets/vue-use-embed.png" alt="Vue Use Embed logo"></a></p>
+<p align="center"><img src="https://vue-use-embed.netlify.app/assets/vue-use-embed.png" alt="Vue Use Embed logo"></p>
 <p align="center">Vue Use Embed implemented as vue composition functions.</p>
 
 ## :sunny: Introduction

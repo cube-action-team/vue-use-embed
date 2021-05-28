@@ -1,9 +1,9 @@
-<p align="center"><a href="/"><img src="https://vue-use-embed.netlify.app/assets/vue-use-embed.png" alt="Vue Use Embed logo"></a></p>
+<p align="center"><a href="https://vue-use-embed.netlify.app" target="_blank"><img src="https://vue-use-embed.netlify.app/assets/vue-use-embed.png" alt="Vue Use Embed logo"></a></p>
 <p align="center">Vue Use Embed implemented as vue composition functions.</p>
 
 ## :scroll: Documentation
 
-<a href="https://vue-use-embed.netlify.app" target="_blank" rel="noopener noreferrer">vue-use-embed documentation</a>
+<a href="https://vue-use-embed.netlify.app" target="_blank">vue-use-embed documentation</a>
 
 ## :package: Installation
 
