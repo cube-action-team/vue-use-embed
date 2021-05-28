@@ -1,6 +1,6 @@
 # :sparkles: useEmbed
 
-> `useEmbed` is a function that allows you to have state variables for embed code blocks in functional components.
+> `useEmbed` is a function that allows you to have state variables for embed code blocks in composable components.
 
 ## :maple_leaf: Usage
 
