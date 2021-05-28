@@ -1,7 +1,7 @@
 {
   "name": "vue-use-embed",
   "description": "Vue use embed that have been brought together for you to use in all your components.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "module": "dist/vue-use-embed.esm.js",
   "unpkg": "dist/vue-use-embed.js",
   "main": "dist/vue-use-embed.js",
@@ -77,6 +77,11 @@
   ],
   "peerDependencies": {
     "@vue/composition-api": "^1.0.0-rc.6"
+  },
+  "homepage": "https://vue-use-embed.netlify.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cube-action-team/vue-use-embed"
   },
   "lint-staged": {
     "*.{js,vue}": [

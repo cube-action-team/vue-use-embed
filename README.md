@@ -22,7 +22,7 @@ npm install vue-use-embed or npm install @vue/composition-api vue-use-embed
 - Reactivity system with Vue.js.
 - Written in Javascript.
 
-## :bulb: Composable Utils
+## :star: Usage
 
 | Name                        | Arguments           | Returns |
 | --------------------------- | ------------------- | ------- |
