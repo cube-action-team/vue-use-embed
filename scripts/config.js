@@ -12,7 +12,7 @@ const version = process.env.VERSION || require('../package.json').version;
 
 const commons = {
   banner: `/**
-  * elVueCompositionUtils v${version}
+  * elVueUseEmbed v${version}
   * (c) ${new Date().getFullYear()} Abdulnasır olcan
   * @license MIT
   */`,
@@ -63,7 +63,7 @@ const builds = {
   umd: {
     input: 'src/index.js',
     format: 'umd',
-    name: 'VueComposableUtils',
+    name: 'VueUseEmbed',
     env: 'production',
   },
   esm: {
