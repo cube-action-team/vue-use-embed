@@ -19,12 +19,12 @@ module.exports = {
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:site', content: '@VueUseEmbed' }],
     ['meta', { name: 'twitter:creator', content: '@VueUseEmbed' }],
-    ['meta', { name: 'twitter:image', content: `${Base_URL}/assets/vue-use-embed.png` }],
+    ['meta', { name: 'twitter:image', content: `${Base_URL}/assets/vue-use-embed-logo.png` }],
     ['meta', { name: 'twitter:title', content: name }],
     ['meta', { name: 'twitter:description', content: description }],
     ['meta', { name: 'twitter:url', content: Base_URL }],
     ['meta', { property: 'twitter:domain', content: Base_URL }],
-    ['meta', { property: 'og:image', content: `${Base_URL}/assets/vue-use-embed.png` }],
+    ['meta', { property: 'og:image', content: `${Base_URL}/assets/vue-use-embed-logo.png` }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['link', { rel: 'mask-icon', href: `${Base_URL}/assets/vue-use-embed.png`, color: '#36495e' }],
     ['link', { rel: 'apple-touch-icon', sizes: '57x57', href: `${Base_URL}/icons/apple-icon-57x57.png` }],
@@ -73,7 +73,7 @@ module.exports = {
 function getSidebar() {
   return [
     {
-      title: 'Vue-use-embed',
+      title: 'vue-use-embed',
       collapsable: false,
       children: [
         {

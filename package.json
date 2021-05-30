@@ -1,7 +1,7 @@
 {
   "name": "vue-use-embed",
   "description": "Vue use embed that have been brought together for you to use in all your components.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "module": "dist/vue-use-embed.esm.js",
   "unpkg": "dist/vue-use-embed.js",
   "main": "dist/vue-use-embed.js",
